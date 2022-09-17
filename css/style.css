@@ -1,0 +1,95 @@
+body, ul, li, label, input, canvas {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px 'Montserrat', sans-serif;
+}
+
+.input[value], .btn {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.legend {
+  margin-right: 20px;
+}
+
+.legend__item {
+  position: relative;
+  line-height: 30px;
+}
+
+.label {
+  padding: 0 20px;
+}
+
+.input {
+  padding-left: 20px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.color, .color__one, .color__two, .color__three, .color__four, .color__five {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  float: left;
+  height: 10px;
+  width: 10px;
+}
+
+.color__one {
+  background-color: #f8b195;
+}
+
+.color__two {
+  background-color: #f67280;
+}
+
+.color__three {
+  background-color: #ffc1d3;
+}
+
+.color__four {
+  background-color: #d4c0e5;
+}
+
+.color__five {
+  background-color: #1d4260;
+}
+
+.btn {
+  cursor: pointer;
+  border: 2px solid #876174;
+  padding: 20px 40px;
+  background-color: transparent;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #c0a7b4;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */

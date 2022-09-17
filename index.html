@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pi Chart</title>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="pieChart"></canvas>
+        <ul class="legend">
+
+            <li class="legend__item">
+                <div class="color__one"></div>
+                <label for="one" class="label">One:</label>
+                <input type="text" id="one" class="input" value=70>
+            </li>
+
+            <li class="legend__item">
+                <div class="color__two"></div>
+                <label for="two" class="label">Two:</label>
+                <input type="text" id="two" class="input" value=70>
+            </li>
+
+            <li class="legend__item">
+                <div class="color__three"></div>
+                <label for="three" class="label">Three:</label>
+                <input type="text" id="three" class="input" value=70>
+            </li>
+
+            <li class="legend__item">
+                <div class="color__four"></div>
+                <label for="four" class="label">Four:</label>
+                <input type="text" id="four" class="input" value=70>
+            </li>
+
+            <li class="legend__item">
+                <div class="color__five"></div>
+                <label for="five" class="label">Five:</label>
+                <input type="text" id="five" class="input" value=70>
+            </li>
+        </ul>
+
+        <button class="btn">Update pie chart</button>
+    </div>
+
+    <script src="custom.js"></script>
+</body>
+
+</html>

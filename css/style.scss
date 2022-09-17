@@ -1,0 +1,75 @@
+body, ul, li, label, input, canvas {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font: 14px 'Montserrat', sans-serif;
+  }
+  
+  .input[value], .btn {
+    font: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .legend {
+    margin-right: 20px;
+    &__item {
+      position: relative;
+      line-height: 30px;
+    }
+  }
+  
+  .label {
+    padding: 0 20px;
+  }
+  
+  .input {
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  
+  .color {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    float: left;
+    height: 10px;
+    width: 10px;
+    
+    &__one, &__two, &__three, &__four, &__five { 
+        @extend .color; 
+    }
+    
+    &__one { background-color: #f8b195; }
+    &__two { background-color: #f67280; }
+    &__three { background-color: #ffc1d3; }
+    &__four { background-color: #d4c0e5; }
+    &__five { background-color: #1d4260; }
+  }
+  
+  .btn {
+    cursor: pointer;
+    border: 2px solid #876174;
+    padding: 20px 40px;
+    background-color: transparent;
+    transition: all .25s ease-in-out;
+    
+    &:hover {
+      background-color: lighten(#876174, 25%);
+      border-radius: 20px;
+    }
+  }
